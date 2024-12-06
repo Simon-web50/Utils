@@ -1,9 +1,10 @@
+import javax.swing.*;
 import java.awt.*;
 
 public class Main {
     public static void main(String[] args) {
         // 创建一个窗口
-        Frame frame = new Frame("这里是一个Window测试窗口");
+        JFrame frame = new JFrame("这里是一个Window测试窗口");
 
         // 指定窗口的位置、大小(单位像素px)
         frame.setLocation(100, 100);
@@ -22,5 +23,8 @@ public class Main {
 
         // 设置窗口对象可见
         frame.setVisible(true);
+
+        // 关闭窗口
+        frame.getDefaultCloseOperation();
     }
 }

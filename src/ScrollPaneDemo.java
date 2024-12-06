@@ -1,9 +1,10 @@
+import javax.swing.*;
 import java.awt.*;
 
 public class ScrollPaneDemo {
     public static void main(String[] args) {
-        Frame frame = new Frame("这里演示ScrollPane");
-
+//        Frame frame = new Frame("这里演示ScrollPane");
+        JFrame jframe = new JFrame("这里演示ScrollPane");
         // 创建一个ScrollPane对象
         ScrollPane sp = new ScrollPane(ScrollPane.SCROLLBARS_ALWAYS);
 
@@ -12,8 +13,9 @@ public class ScrollPaneDemo {
         sp.add(new Button("这是测试按钮"));
 
         // 把ScrollPane添加到Frame中
-        frame.add(sp);
-
-        frame.setVisible(true);
+        jframe.add(sp);
+        jframe.setBounds(100,100,500,300);
+        jframe.setVisible(true);
+        jframe.getDefaultCloseOperation();
     }
 }
